@@ -80,28 +80,28 @@ void loop(){
   }
 
   if (caracter =='a') { //Controle - Quarto - Estudar  
-        Setpoint1=871;
+        Setpoint1=877;
   
      
    }
 
    if (caracter == 'b') { //Controle - Quarto - Ver TV
  
-       Setpoint1=790;
+       Setpoint1=796;
    
    
    }
 
    if (caracter == 'c') { //Controle - Quarto - Ver Filme
  
-       Setpoint1=360;
+       Setpoint1=222;
 
    
    }
 
     if (caracter == 'd'){ //Controle - Quarto - Romance
     
-       Setpoint1=480;
+       Setpoint1=550;
 
    }
 
@@ -111,61 +111,44 @@ void loop(){
        Setpoint1=0;
     }
 
-    if (caracter== 'f') { //Controle - Sala  - Eventos 
-
-
-      Setpoint2=930;
-    
+       if (caracter== 'f') { //Controle - Sala  - Eventos 
+     Setpoint2=1023;
+         
     }
-
+  
     if (caracter== 'g') { //Controle - Sala  - Reunião 
-      
-      Setpoint2=890;    
+      Setpoint2=903;    
    }
-
+  
     if (caracter== 'h') { //Controle - Sala  - Ver TV 
-
-      Setpoint2=830;
-  
-    }
-
-    if (caracter== 'i') { //Controle - Sala  - Ver Filme  
-
-     Setpoint2=370;
-  
+    Setpoint2=809;
+      
   }
-
+  if (caracter== 'i') { //Controle - Sala  - Ver Filme  
+   Setpoint2=330;
+    
+  }
     if (caracter== 'j') { //Sala Controle - Sala  - Romance
-
-      Setpoint2=640;
-
+     Setpoint2=640;
+   }
+  
+    if (caracter== 'l') { //Controle - Sala  - Desligar
+      Setpoint2=0;
     }
   
-   
-    if (caracter== 'l') { //Controle - Sala  - Desligar
-
-
-      Setpoint2=0;
-    
-    }
-    
     if (caracter== 'm') { //Controle - Sala de Jantar - Preparando da mesa
-
-      Setpoint3=900;
-   
+    Setpoint3=900;
+      
+   }
+  
+   if (caracter== 'n') { //Controle - Sala de Jantar - jantar
+   Setpoint3=830;
+     
+  }
+  
+  if (caracter== 'o') { //Controle - Sala de Jantar - Desligar
+  Setpoint3=0;
     }
-
-    if (caracter== 'n') { //Controle - Sala de Jantar - jantar
-
-        Setpoint3=830;
-    
-   }
-
-   if (caracter== 'o') { //Controle - Sala de Jantar - Desligar
-
-        Setpoint3=0;
-    
-   }
 
    
     myPID1.Compute(); // Executa o loop PID
